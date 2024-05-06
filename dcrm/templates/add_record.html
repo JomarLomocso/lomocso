@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>THIS IS THE REGISTRATION PAGE</h1>
+<h1>ADD RECORD</h1>
 
 <div class="container col-md-6">
     <div class="row">
@@ -11,8 +11,10 @@
             {{form.as_p}}
              
              <button type="submit">REGISTER</button>
+             
+
          </form>
-         
+         <a  href="{% url 'home' %}"><button>BACK</button></a>
     </div>
 </div>
 
