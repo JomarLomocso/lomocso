@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'lomocso.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ipat2b',
+        'USER': 'postgres',
+        'PASSWORD': 'lomocso',
+        'PORT': '5432',
     }
 }
 
